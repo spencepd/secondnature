@@ -1,0 +1,57 @@
+    <div id="main-content">
+      
+      <div id="content">
+      	<h2>About Us</h2>
+		
+        <p>Lorem ipsum ornatus referrentur vim ne, nec nihil facilis ceteros cu, dissentiet necessitatibus ea his. </p>
+       
+<?php echo $msg;?>
+          <form id="contact-form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+            <p>
+              <label for="name">Name:</label><input type="text" name="name" id="name" value="<?php echo $name;?>" />
+            </p>
+            <p>
+              <label for="email">Email:</label><input type="text" name="email" id="email" value="<?php echo $email;?>"  />
+            </p>
+            <p>
+              <label for="subject">Subject:</label><input type="text" name="subject" id="subject" value="<?php echo $subject;?>"  />
+            </p>
+            <p>
+              <label for="message">Message:</label><textarea name="message" id="message" rows="5" cols="20"><?php echo $message;?></textarea>
+            </p>
+            <p>
+              <label>&nbsp;</label><input type="submit" value="Submit Form" name="submit" class="send_btn"/>
+            </p>
+          </form>
+
+      </div><!--end content-->
+      
+      <div id="sidebar">
+
+        <div class="map">
+        	<div class="contact-info">
+            	<strong>Creativity</strong>
+            	<small>p: +1 234 567 8910</small>
+                <small>f: +1 234 567 8910</small>
+                <small>e: <a href="#">email@domain.com</a></small>
+            </div>
+		</div><!-- end map -->
+        
+        <div class="no-box social-network">
+        <h2>Social Media</h2>
+        <ul>
+        	<li><a href="#"><img src="images/facebook_32.png" alt="Facebook" /></a></li>
+            <li><a href="#"><img src="images/twitter_32.png" alt="Twitter" /></a></li>
+            <li><a href="#"><img src="images/flickr_32.png" alt="Flickr" /></a></li>
+            <li><a href="#"><img src="images/linkedin_32.png" alt="Linkedin" /></a></li>
+            <li><a href="#"><img src="images/delicious_32.png" alt="Delicious" /></a></li>
+            <li><a href="#"><img src="images/email_32.png" alt="Email" /></a></li>
+            <li><a href="#"><img src="images/picasa_32.png" alt="Picasa" /></a></li>
+        </ul>
+		</div><!-- end no-box -->
+      	
+      </div><!--end sidebar-->
+      
+     
+    </div>
+    <!--end main_content-->
