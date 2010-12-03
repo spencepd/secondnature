@@ -119,6 +119,7 @@ a:hover {
 }
 #content h4, #wide-content h4  {
 	font-size:16px;
+	text-decoration:underline;
 }
 #sidebar {
 	float:left;
